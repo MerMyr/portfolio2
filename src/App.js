@@ -11,7 +11,7 @@ export default function App(props) {
   return( 
         <>
           <Nav 
-              logo={"./../images/meretheMyrhaugB-W_3.png"}
+              logo={"/./scss/images/meretheMyrhaugB-W_3.png"}
               home={'Home'}
               about={'About/CV'}
               contact={'Contact'}
