@@ -1,0 +1,25 @@
+.header{
+    height: 60vh;
+    padding-top: 5%;
+    background-image: url(../images/mm-logo-b.svg);
+    background-repeat: no-repeat;
+    object-fit:cover ;
+    margin-top: 2%;
+}
+
+h1{
+    color: $blue;
+    font-weight: lighter;
+    font-size: $my-h1;
+    margin-top: 10%;
+}
+h2{
+    margin-top: 15%;
+}
+.header-content{
+    padding: 25% 0 5% 5%;
+}
+
+.hastag{
+    color: rgb(46, 46, 46);
+}

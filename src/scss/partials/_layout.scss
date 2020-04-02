@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    font-family: $font;
+    overflow-x: hidden;
+}
+
+h3{
+    color: $blue;
+}
+h2, h4, h5, p{
+    color: $dark;
+}
+
+hr{
+    border: 1.5px solid $blue;
+}
+.error{
+    color: $error;
+    
+    &__hide{
+        display: none;
+    }
+}
+
+.show{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}
+
