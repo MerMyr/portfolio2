@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from './meretheMyrhaugW.png';
 
-const Footer = (props) => {
-    const { logo } = props;
-
+const Footer = () => {
+   
     return(
       
         <div className="col-sm-12 footer">
@@ -13,7 +13,7 @@ const Footer = (props) => {
             </NavLink>
 
             <NavLink className="col-sm-4 footer-link" to="/">
-                    <img alt="Merethe M logo" src={logo}/>
+                    <img className="logo-footer" alt="Merethe M logo" src={Logo}/>
             </NavLink>
 
             <NavLink className="col-sm-4 footer-link" target="blank" to="https://www.linkedin.com/in/merethe-myrhaug-068b06a2/">

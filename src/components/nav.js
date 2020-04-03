@@ -1,15 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from './meretheMyrhaugB-W_3.png';
+
 
 const Nav = (props) => {
-    const { home, about, contact, logo } = props;
+    const { home, about, contact } = props;
 
     return(
       
     <nav className="col-sm-12 navbar navbar-default">
       <div className="container-fluid">
             <NavLink className="navbar-brand" to="/">
-                    <img alt="Merethe M logo" src={logo}/>
+                    <img className="logo-nav" alt="Merethe M logo" src={Logo}/>
             </NavLink>
         <div className="navbar-header navbar-right">
           <ul className="nav navbar-nav">
