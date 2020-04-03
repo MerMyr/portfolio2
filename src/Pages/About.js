@@ -1,10 +1,11 @@
 import React from 'react';
 //, { useState, useEffect}
 import Header from './../components/header';
-import Projects from './../components/projects';
 
 
-import Me from './img/blue-me.svg';
+//import Me from './me-original.png';
+import SubHeader from '../components/subHeader';
+import CvSection from '../components/cvSection';
 
 
 export default function About() {
@@ -26,23 +27,61 @@ export default function About() {
                                 I’m now seeking full time work as a front-end developer preferably from mid June. `}
                 />                  
             </div>
-            <div className="row col-sm-12">
-               <img scr={Me} alt="This is me"/> <h2>Curriculum vitae:</h2>
-                <div className="col-sm-7 line"></div>
-            </div>
-            <Projects
-                    heading={'Rosenlund barnehage'}
-                    subHeading={`New website:`}
-                    intro={'This project was done for Rosenlund Barnehage, integrated into my project exam for semester two of four.'} 
-                    introTXTHeading={`Introduction…`}
-                    introTXT={`Rosenlund barnehage wanted a brand new/a complete overhaul of their existing website. The main goal of making a new website is to give potential customers a feeling that Rosenlund barnehage is a professional establishment, that takes care of your children and are a safe place for the kids to learn and evolve.
-                            Secondly the goal is to fill the empty spots/spaces available.
-                            The website should be user friendly, reliable and a informative source for customers and potential customers.`} 
-                    hastag={`# HTML5, CSS, Javascript, Web Design/Graphic Design`} 
-                    projectLink={'Click here to take a closer look'}
-                    projectImg={''}
+           
+            <SubHeader
+                    imgTXT={'This is me'} 
+                    subHeading={'Curriculum vitae:'}
+            />
+            <CvSection
+                     heading={'Personalia:'}
+                     infoTXTHeading={'Address:'} 
+                     infoTXT={'0352 Oslo, Norway'} 
+                     info2TXTHeading={'E-mail:'} 
+                     info2TXT={'merethe.myrhaug@gmail.com'} 
+                     info3TXTHeading={'Nationality:'} 
+                     info3TXT={'Norwegian'} 
+                     info4TXTHeading={'Civil status:'} 
+                     info4TXT={'Unmarried'} 
+            />
+             <CvSection
+                     heading={'Education:'}
+                     infoTXTHeading={'Address:'} 
+                     infoTXT={'0352 Oslo, Norway'} 
+                     info2TXTHeading={'E-mail:'} 
+                     info2TXT={'merethe.myrhaug@gmail.com'} 
+                     info3TXTHeading={'Nationality:'} 
+                     info3TXT={'Norwegian'} 
+                     info4TXTHeading={'Civil status:'} 
+                     info4TXT={'Unmarried'} 
+            />
+             <CvSection
+                     heading={'Work experience: '}
+                     infoTXTHeading={'Address:'} 
+                     infoTXT={'0352 Oslo, Norway'} 
+                     info2TXTHeading={'E-mail:'} 
+                     info2TXT={'merethe.myrhaug@gmail.com'} 
+                     info3TXTHeading={'Nationality:'} 
+                     info3TXT={'Norwegian'} 
+                     info4TXTHeading={'Civil status:'} 
+                     info4TXT={'Unmarried'} 
+            />
+             <CvSection
+                     heading={'Skills / Other:'}
+                     infoTXTHeading={'Address:'} 
+                     infoTXT={'0352 Oslo, Norway'} 
+                     info2TXTHeading={'E-mail:'} 
+                     info2TXT={'merethe.myrhaug@gmail.com'} 
+                     info3TXTHeading={'Nationality:'} 
+                     info3TXT={'Norwegian'} 
+                     info4TXTHeading={'Civil status:'} 
+                     info4TXT={'Unmarried'} 
             />
            
         </div>
     )
 }
+/* <div className="row col-sm-12">
+                <p>This is me</p>
+               <img scr={Me} alt="This is me"/> <h2>Curriculum vitae:</h2>
+                <div className="col-sm-7 line"></div>
+            </div>*/
