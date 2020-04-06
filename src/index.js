@@ -10,7 +10,7 @@ import {
 import App from './App';
 import Home from './Pages/Home'
 import About from './Pages/About'
-//import Contact from './Pages/Contact'; 
+import Contact from './Pages/Contact'; 
 
 
 ReactDOM.render(
@@ -19,6 +19,7 @@ ReactDOM.render(
             <Switch>
                 <Route path="/" exact component={Home}/>
                 <Route path="/About" exact component={About}/>
+                <Route path="/Contact" exact component={Contact}/>
             </Switch>
         </App>
     </Router>,

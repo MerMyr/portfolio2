@@ -1,0 +1,22 @@
+.container-form{
+  margin-left: 35%;
+  margin-bottom: 10%;
+}
+
+.form-control{
+    box-shadow: 3px 4px 10px rgba(95, 118, 129, 0.5);
+    border: solid 2px $blue;
+}
+
+.btn{
+    color: white;
+    background-color: $dark;
+    width: 80px;
+    box-shadow: 3px 4px 10px rgba(95, 118, 129, 0.7);
+
+    &:hover{
+        color: $dark;
+        background-color: white;
+        border:solid 2px $blue;
+    }
+}
