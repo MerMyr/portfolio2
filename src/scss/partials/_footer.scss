@@ -1,4 +1,5 @@
 .footer {
+    display: flex;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -26,5 +27,6 @@
   }
 
   .logo-footer{
-      width: 50%;
+      width: 35%;
+      float: right;
   }

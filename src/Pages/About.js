@@ -13,7 +13,7 @@ export default function About() {
 
     return(
       
-        <div className="container">
+        <div className="container about-container">
             <div className="row col-sm-12">
                 <Header
                     heading={'About me:'}

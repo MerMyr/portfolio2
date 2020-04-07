@@ -1,12 +1,27 @@
+.projects-txt{
+  width: 50%;
+  padding: 2% 0 0 10%;
+}
+
 .projects-img{
+        margin-top: 25vh;
         width: 450px;
         height: 250px;
-        border-style: solid;
+        /*border-style: solid;
         border-color: black;
-        border-width: 1px;
-   
+        border-width: 1px;*/
+        margin-bottom: 5%;
+        img{
+            width: 450px;
+            border: solid 1px rgb(185, 185, 185);
+            box-shadow: 3px 4px 10px rgba(95, 118, 129, 0.5);
+        }
 }
 
 .line{
     border-bottom: 3px solid $blue;
+}
+
+.projects-link{
+    cursor: pointer;
 }
