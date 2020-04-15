@@ -1,6 +1,7 @@
 .subHeader-container{
   border-bottom: 3px solid $blue;
   height: 30vh;
+  margin-top:10vh;
     h2{
         text-align: right;
         padding-top: 22vh;
@@ -18,5 +19,15 @@
     background-repeat: no-repeat;
     opacity: 0.85;
     transform: scaleX(-1);
-    margin: 4.5vh 0 0 -1vw;
+    margin: 3vh 0 0 -1vw;
+}
+
+.cv-txt-container{
+    padding: 0 0 0 10%;
+}
+.cv-txt{
+    padding: 0 50% 0 0;
+    h2, h3, h4, p{
+        width: 100%;
+    }
 }

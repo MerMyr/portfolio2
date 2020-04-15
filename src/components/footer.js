@@ -13,7 +13,7 @@ const Footer = () => {
                     <p>e-mail: merethe.myrhaug@gmail.com</p>
                 </NavLink>
                 <NavLink className="" target="blank" to="https://www.linkedin.com/in/merethe-myrhaug-068b06a2/">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in"></i>
                 </NavLink>
             </div>
             <div className="col-sm-6 footer-link">

@@ -3,21 +3,23 @@ import React from 'react';
 
 
 const Projects = (props) => {
-    const { heading, subHeading, intro, introTXTHeading,introTXT, hastag, projectLink, projectImg } = props;
+    const { heading, subHeading, intro, introTXTHeading,introTXT, hastag, projectImg, reverse } = props;
 
     return(
       
-        <div className="col-sm-12 projects">
-            <div className="row col-sm-12 projects-txt">
-                <h3>{heading}</h3> 
-                <h3>{subHeading}</h3> 
-                <h4>{intro}</h4>
-                <p>{introTXTHeading}</p>
-                <p>{introTXT}</p>
-                <p className="hastag">{hastag}</p>
-            </div>
-            <div className="row col-sm-12 projects-img">
-              <img alt="Project example" src={projectImg}/>
+        <div className="col-sm-12 projects container">
+            <div className={reverse}>
+                <div className="row  projects-txt">
+                    <h3>{heading}</h3> 
+                    <h3>{subHeading}</h3> 
+                    <h4>{intro}</h4>
+                    <p>{introTXTHeading}</p>
+                    <p>{introTXT}</p>
+                    <p className="hastag">{hastag}</p>
+                </div>
+                <div className="row projects-img">
+                    <img alt="Project example" src={projectImg}/>
+                </div>
             </div>
         </div>
     

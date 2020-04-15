@@ -42,19 +42,20 @@ export default function Home() {
                 />
                 <div className="col-sm-12 projects-link">
                     <div className="col-sm-9 line"></div>
-                    <NavLink className="col-sm-3" to="http://mermyr.com/merethe/2019-12-12-SemesterProject2-Merethe-Myrhaug/"  target="blank">Click here to take a closer look</NavLink>
+                    <a className="col-sm-3" href="http://mermyr.com/merethe/2019-12-12-SemesterProject2-Merethe-Myrhaug/"  target="blank">Click here to take a closer look</a>
                 </div>
 
               <Projects
+                        reverse={'reverse'}
                         heading={'Homefair- Logo'}
                         intro={'Homefair AS wanted to use the logo I made for them in the final assignment for the Design 2 course.'} 
                         introTXT={'Look at the logo in use and reed more about Homefair'} 
                         hastag={'# Graphic Design'} 
                         projectImg={ProjectImg2}
                 />
-                <div className="col-sm-12 projects-link">
+                <div className="col-sm-12 projects-link reverse">
                     <div className="col-sm-9 line"></div>
-                    <NavLink className="col-sm-3" to="http://mermyr.com/merethe/2019-11-04-MA3-design2_HomeFair-MeretheMyrhaug/homefair-designSystem.html#logo"  target="blank">Look at the logo</NavLink>
+                    <a className="col-sm-3" href="http://mermyr.com/merethe/2019-11-04-MA3-design2_HomeFair-MeretheMyrhaug/homefair-designSystem.html#logo"  target="blank">Look at the logo</a>
                 </div>
 
               <Projects
@@ -68,10 +69,11 @@ export default function Home() {
                  />
                 <div className="col-sm-12 projects-link">
                     <div className="col-sm-9 line"></div>
-                    <NavLink className="col-sm-3" to="http://mermyr.com/merethe/2019-11-11-Design2CA-MeretheMyrhaug/homeFair-index.html" target="blank">Click here to take a closer look</NavLink>
+                    <a className="col-sm-3" href="http://mermyr.com/merethe/2019-11-11-Design2CA-MeretheMyrhaug/homeFair-index.html" target="blank">Click here to take a closer look</a>
                 </div>
 
                 <Projects
+                        reverse={'reverse'}
                         heading={'Rosenlund barnehage'}
                         subHeading={`New website:`}
                         intro={'This project was done for Rosenlund Barnehage, integrated into my project exam for semester two of four.'} 
@@ -82,9 +84,9 @@ export default function Home() {
                         hastag={`# HTML5, CSS, Javascript, Web Design/Graphic Design`} 
                         projectImg={ProjectImg4}
                 />
-                <div className="col-sm-12 projects-link">
+                <div className="col-sm-12 projects-link reverse">
                     <div className="col-sm-9 line"></div>
-                    <NavLink className="col-sm-3" to="http://mermyr.com/merethe/2019-05-13-ProjectExam-MeretheMyrhaug-WebsiteRB/Rosenlund-Barnehage.html"  target="blank">Click here to take a closer look</NavLink>
+                    <a className="col-sm-3" href="http://mermyr.com/merethe/2019-05-13-ProjectExam-MeretheMyrhaug-WebsiteRB/Rosenlund-Barnehage.html"  target="blank">Click here to take a closer look</a>
                 </div>
         </div>
     )

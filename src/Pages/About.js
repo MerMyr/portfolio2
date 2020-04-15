@@ -17,9 +17,8 @@ export default function About() {
             <div className="row col-sm-12">
                 <Header
                     heading={'About me:'}
-                    headerTXT={'Hi, my name is Merethe.'}
                     subTXT={`I’m a Oslo based frontend development second year student, with a BA in creative marketing communication.`}
-                    headerLink={`Earlier- studies and work experience have given me a focus and interests of UX-design and visual kommunikation, as well as a customer(end-user) oriented-, analytical- and creative mind.
+                    aboutTXT={`Earlier- studies and work experience have given me a focus and interests of UX-design and visual kommunikation, as well as a customer(end-user) oriented-, analytical- and creative mind.
                                 I’m a curious person, which led me to become a short-term nomad at one point in my life. This helped me to become more adaptable to various situations, and a more pragmatic and proactive person.
                                 As I write this I’m doing my last semester at Noroff -school of technology and digital media, working and learning a lot as a student assistant- front-end developer at a startup (Homefair AS), as well as a couple of hours a week as a customer consultant selling EVO and other mediterranean food specialties.
                                 So no secrets now, my hobbies are cooking, traveling, kulture and hiking in the beautiful outdoors.
@@ -43,7 +42,9 @@ export default function About() {
                      info4TXTHeading={'Civil status:'} 
                      info4TXT={'Unmarried'} 
             />
+           
              <CvSection
+                     reverse={'reverse'}
                      heading={'Education:'}
                      subHeading={'Higher education:'}
                      infoTXTHeading={'Noroff school of technology and digital media:'} 
@@ -54,6 +55,7 @@ export default function About() {
                      info3TXT={'Roald Amundsen VGS (Oppegård VGS)- Design GK, Art/design and colors VK1/VK2.'} 
                      info4TXT={'Ski ungdomsskole, Finstad barneskole.'} 
             />
+            
              <CvSection
                      heading={'Work experience: '}
                      subHeading={'Homefair AS'}
@@ -72,7 +74,9 @@ export default function About() {
                             
                             ICA Maxi/Ultra Mat Ski AS: Summer 2006-08. Checkout Clerk (Call staff/Part-/Full-time).`} 
             />
+           
              <CvSection
+                     reverse={'reverse'}
                      heading={'Skills / Other:'}
                      infoTXTHeading={'Additional skills:'} 
                      infoTXT={`HTML, CSS (SASS), Javascript, office pakken Adobe: XD, Illustrator, Indesign, Photoshop.`} 

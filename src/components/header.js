@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
-    const { heading, headerTXT, subTXT, headerLink } = props;
+    const { heading, headerTXT, subTXT, headerLink, aboutTXT } = props;
 
     return(
       
@@ -12,9 +12,11 @@ const Header = (props) => {
                 
             </div>
             <div className="col-sm-6 header-content">
-                <p>{headerTXT}</p>
-                <p>{subTXT}
-                <NavLink to="/">{headerLink}</NavLink></p>
+                <h4>{headerTXT}</h4>
+                <h4>{subTXT}
+                <NavLink to="/about">{headerLink}</NavLink>
+                </h4>
+                <p>{aboutTXT}</p>
             </div>
         </div>
     

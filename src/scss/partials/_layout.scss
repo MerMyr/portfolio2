@@ -5,11 +5,22 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    &:visited{
+        color: $blue;
+    }
+}
 h3{
     color: $blue;
 }
 h2, h4, h5, p{
     color: $dark;
+}
+h4{
+    font-size: $my-h4;
+}
+p{
+    font-size: $my-p;
 }
 
 hr{
@@ -35,4 +46,28 @@ hr{
     padding:0;
     margin-bottom: 10%;
 
+}
+
+.line{
+    border-bottom: 3px solid $blue;
+    padding:0;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+ 
+    .projects-img{
+        img{
+           float: left;
+           margin-top: 25vh;
+        }
+    }
+
+    .cv-txt-container{
+        padding: 0 10% 0 0;
+    }
+    .cv-txt{
+        padding: 0 0 0 50%;
+    }
 }
