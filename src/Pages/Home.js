@@ -20,7 +20,6 @@ export default function Home() {
         <div className="container home-container">
             <div className="row col-sm-12">
                 <Header
-                    heading={'Velkommen'}
                     headerTXT={'Hi, my name is Merethe.'}
                     subTXT={`I'm a Oslo based frontend development second year student, with a BA in creative marketing communication. On this website you can take a look at some projects and`}
                     headerLink={' read more about me.'}

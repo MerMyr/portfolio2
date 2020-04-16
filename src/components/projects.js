@@ -21,7 +21,7 @@ const Projects = (props) => {
                     <h3>{subHeading}</h3> 
                     <h4>{intro}</h4>
                     <p id="intro" onClick={toggleFunc}>{introTXTHeading} <i className="fas fa-sort-down"></i></p>
-                    <p className={(toggleIntro) ? 'show animated fadeInDown' : 'hide'}>{introTXT}</p>
+                    <p className={(toggleIntro) ? 'show animated flipInX slow-1s' : 'hide'}>{introTXT}</p>
                     <p className="hastag">{hastag}</p>
                 </div>
                 <div className="row projects-img">

@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+
 import Logo from './img/meretheMyrhaugW.png';
 
 //import Header from './../components/header';
