@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 
 const CvSection = (props) => {
     const { heading, subHeading, intro, infoTXTHeading, infoTXT, subHeading2, info2TXTHeading, info2TXT, subHeading3, info3TXTHeading, info3TXT, info4TXTHeading, info4TXT, info5TXTHeading, info5TXT, reverse } = props;

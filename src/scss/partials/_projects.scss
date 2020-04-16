@@ -31,3 +31,9 @@
     cursor: pointer;
 }
 
+#intro{
+    cursor: pointer;
+    &:hover{
+        font-weight: bold;
+    }
+}

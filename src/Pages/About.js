@@ -9,7 +9,7 @@ import CvSection from '../components/cvSection';
 
 
 export default function About() {
-    
+ 
 
     return(
       

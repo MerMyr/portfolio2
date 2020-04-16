@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
+import Logo from './img/meretheMyrhaugW.png';
 
-import Header from './../components/header';
+//import Header from './../components/header';
 
 
 export default function Contact() {
@@ -135,8 +136,8 @@ export default function Contact() {
         <div className={(toggle) ?  'col-sm-12' && 'popup_container' : 'hide'}>
             <div className="col-sm-8 popup_content">
                 <i onClick={toggleFunc} className="fas fa-times"></i>
-                <h3>Thank you for your message!</h3>
-                <i className="far fa-smile-beam"></i>
+                <h3>Thank you for your message. <br/> <br/> I will get back to you, as soon as possible!</h3>
+                <img className="logo-thank" alt="Merethe M logo" src={Logo}/>
             </div>
         </div>
    

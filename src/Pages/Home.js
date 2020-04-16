@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 
 //, { useState, useEffect}
 import Header from './../components/header';
@@ -34,7 +34,7 @@ export default function Home() {
               <Projects
                         heading={'Thrones- The board game'}
                         intro={'Project exam for semester three. Game of thrones inspired board game'} 
-                        introTXTHeading={`Introduction…`}
+                        introTXTHeading={`The assignment`}
                         introTXT={`Create a online board game for Game of Thrones. Using HTML CSS Frameworks, JavaScript
                                     and knowledge from Design 2. The board game will have a character selection page, a board game page and a final page/modal-popup to display winner.`} 
                         hastag={'# HTML5, CSS, Javascript, Web Design/Graphic Design'} 
@@ -61,7 +61,7 @@ export default function Home() {
               <Projects
                         heading={'HomeFair (startup): Design system, Home page, popup modals and result page'}
                         intro={'Final assignment for the Design 2 course, assignment from the startup HomeFair'} 
-                        introTXTHeading={`The assignment:`}
+                        introTXTHeading={`The assignment`}
                         introTXT={`To make the home page with pop up modal and the result page for HomeFair. Using components from the
                                     Design System created for the client's website combined with given material from the client. Look at the design system`} 
                         hastag={'# HTML5, CSS, Javascript, Web Design/Graphic Design'} 
@@ -77,7 +77,7 @@ export default function Home() {
                         heading={'Rosenlund barnehage'}
                         subHeading={`New website:`}
                         intro={'This project was done for Rosenlund Barnehage, integrated into my project exam for semester two of four.'} 
-                        introTXTHeading={`Introduction…`}
+                        introTXTHeading={`The assignment`}
                         introTXT={`Rosenlund barnehage wanted a brand new/a complete overhaul of their existing website. The main goal of making a new website is to give potential customers a feeling that Rosenlund barnehage is a professional establishment, that takes care of your children and are a safe place for the kids to learn and evolve.
                                 Secondly the goal is to fill the empty spots/spaces available.
                                 The website should be user friendly, reliable and a informative source for customers and potential customers.`} 

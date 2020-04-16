@@ -36,10 +36,12 @@ hr{
 
 .show{
     visibility: visible;
+    transition: visible 4s ease-out;
 }
 
 .hide{
     visibility: hidden;
+    transition: visible 4s ease-out;
 }
 
 .container{
