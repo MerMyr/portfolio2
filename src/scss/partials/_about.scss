@@ -14,16 +14,24 @@
 
 .subHeader-img{
     height: 30vh;
-    background-image: url(../images/me-original.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
     opacity: 0.85;
     transform: scaleX(-1);
     margin: 3vh 0 0 -1vw;
+    img{
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .cv-txt-container{
     padding: 0 0 0 10%;
+
+    h2{
+        color: $blue;
+    }
+    h3{
+        color: $dark;
+    }
 }
 .cv-txt{
     padding: 0 50% 0 0;

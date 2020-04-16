@@ -1,5 +1,5 @@
 import React from 'react';
-//import Me from './me-original.png';
+import Me from './me-original.png';
 
 const SubHeader = (props) => {
     const { imgTXT, subHeading } = props;
@@ -8,7 +8,9 @@ const SubHeader = (props) => {
       
         <div className="row col-sm-9 subHeader-container">
             <p>{imgTXT}</p>
-            <div className="col-sm-3 subHeader-img" alt={imgTXT}></div>
+            <div className="col-sm-3 subHeader-img">
+                 <img src={Me} alt={imgTXT}></img>
+            </div>
             <h2 className="col-sm-9">{subHeading}</h2>
         </div>
     
