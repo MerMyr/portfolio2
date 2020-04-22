@@ -1,16 +1,13 @@
 import React from 'react';
-//, { useState, useEffect}
+
 import Header from './../components/header';
 
-
-//import Me from './me-original.png';
 import SubHeader from '../components/subHeader';
 import CvSection from '../components/cvSection';
 
 
 export default function About() {
  
-
     return(
       
         <div className="container about-container">
@@ -92,8 +89,3 @@ export default function About() {
         </div>
     )
 }
-/* <div className="row col-sm-12">
-                <p>This is me</p>
-               <img scr={Me} alt="This is me"/> <h2>Curriculum vitae:</h2>
-                <div className="col-sm-7 line"></div>
-            </div>*/

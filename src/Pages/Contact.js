@@ -2,9 +2,6 @@ import React, { useState} from 'react';
 
 import Logo from './img/meretheMyrhaugW.png';
 
-//import Header from './../components/header';
-
-
 export default function Contact() {
     const [toggle, setToggle] = useState(false);
     const [firstname, setFirstname] = useState('');
@@ -79,69 +76,67 @@ export default function Contact() {
 
     return(
         <div className="container">
-
-        <div className="row col-sm-12 header">    
-                <h1>Contact me:</h1> 
-        </div>
-        <form className="row col-sm-10 container-form" onSubmit={handelSubmit}>
-            <div className="row"> 
-                <div className="col-sm-5">
-                    <h4>Enter your firstname</h4>
-                    <input type="text"
-                            name="firstname"
-                            onChange={handleInput}
-                            className="form-control"
-                    />
-                    <p className={(lastnameError) ? 'error' : 'error__hide'}>Error on lastname</p>
+            <div className="row col-sm-12 header">    
+                    <h1>Contact me:</h1> 
+            </div>
+            <form className="row col-sm-10 container-form" onSubmit={handelSubmit}>
+                <div className="row"> 
+                    <div className="col-sm-5">
+                        <h4>Enter your firstname</h4>
+                        <input type="text"
+                                name="firstname"
+                                onChange={handleInput}
+                                className="form-control"
+                        />
+                        <p className={(lastnameError) ? 'error' : 'error__hide'}>Error on firstname</p>
+                    </div>
+                    <div className="col-sm-5">
+                        <h4> Enter your lastname</h4>
+                        <input type="text"
+                                name="lastname"
+                                onChange={handleInput}
+                                className="form-control"
+                                />
+                        <p className={(lastnameError) ? 'error' : 'error__hide'}>Error on lastname</p>
+                    </div>
+                    <div className="col-sm-5">
+                        <h4>Enter your email</h4>
+                        <input type="text"
+                                name="email"
+                                onChange={handleInput}
+                                className="form-control"
+                        />
+                        <p className={(emailError) ? 'error' : 'error__hide'}>Error on email</p>
+                    </div>
+                    <div className="col-sm-5">
+                        <h4>Enter your phonenumber</h4>
+                        <input type="text"
+                                name="phone"
+                                onChange={handleInput}
+                                className="form-control"
+                        />
+                        <p className={(phoneError) ? 'error' : 'error__hide'}>Error on phonenumber</p>
+                    </div>
+                    <div className="col-sm-10">
+                        <h4>Enter your message</h4>
+                        <textarea 
+                                name="message"
+                                onChange={handleInput}
+                                className="form-control"
+                        />
+                        <p className={(messageError) ? 'error' : 'error__hide'}>Please enter a message</p>
+                        <br/>
+                        <input type="submit" onClick={toggleFunc} disabled={firstnameError || lastnameError || emailError || messageError} className="btn"></input>
+                    </div>
                 </div>
-                <div className="col-sm-5">
-                    <h4> Enter your lastname</h4>
-                    <input type="text"
-                            name="lastname"
-                            onChange={handleInput}
-                            className="form-control"
-                            />
-                    <p className={(lastnameError) ? 'error' : 'error__hide'}>Error on lastname</p>
-                </div>
-                <div className="col-sm-5">
-                    <h4>Enter your email</h4>
-                    <input type="text"
-                            name="email"
-                            onChange={handleInput}
-                            className="form-control"
-                    />
-                    <p className={(emailError) ? 'error' : 'error__hide'}>Error on email</p>
-                </div>
-                <div className="col-sm-5">
-                    <h4>Enter your phonenumber</h4>
-                    <input type="text"
-                            name="phone"
-                            onChange={handleInput}
-                            className="form-control"
-                    />
-                    <p className={(phoneError) ? 'error' : 'error__hide'}>Error on phonenumber</p>
-                </div>
-                <div className="col-sm-10">
-                    <h4>Enter your message</h4>
-                    <textarea 
-                            name="message"
-                            onChange={handleInput}
-                            className="form-control"
-                    />
-                    <p className={(messageError) ? 'error' : 'error__hide'}>Please enter a message</p>
-                    <br/>
-                    <input type="submit" onClick={toggleFunc} disabled={firstnameError || lastnameError || emailError || messageError} className="btn"></input>
+            </form>
+            <div className={(toggle) ?  'col-sm-12' && 'popup_container' : 'hide'}>
+                <div className="col-sm-8 popup_content">
+                    <i onClick={toggleFunc} className="fas fa-times"></i>
+                    <h3>Thank you for your message. <br/> <br/> I will get back to you, as soon as possible!</h3>
+                    <img className="logo-thank" alt="Merethe M logo" src={Logo}/>
                 </div>
             </div>
-        </form>
-        <div className={(toggle) ?  'col-sm-12' && 'popup_container' : 'hide'}>
-            <div className="col-sm-8 popup_content">
-                <i onClick={toggleFunc} className="fas fa-times"></i>
-                <h3>Thank you for your message. <br/> <br/> I will get back to you, as soon as possible!</h3>
-                <img className="logo-thank" alt="Merethe M logo" src={Logo}/>
-            </div>
-        </div>
-   
     </div>
     )
 }

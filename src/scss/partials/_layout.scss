@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+#root{
+    overflow-x: hidden;
+}
 body{
     font-family: $font;
-    overflow-x: hidden;
 }
 
 a{
@@ -58,18 +60,15 @@ hr{
 .reverse{
     display: flex;
     flex-direction: row-reverse;
- 
-    .projects-img{
-        img{
-           float: left;
-           margin-top: 25vh;
-        }
-    }
-
+    
     .cv-txt-container{
         padding: 0 10% 0 0;
     }
     .cv-txt{
         padding: 0 0 0 50%;
+
+        @media (max-width: 767px ){
+            padding-left: 10%;
+        }
     }
 }

@@ -1,9 +1,7 @@
 import React , { useState} from 'react';
-//import { NavLink } from 'react-router-dom';
-
 
 const Projects = (props) => {
-    const { heading, subHeading, intro, introTXTHeading,introTXT, hastag, projectImg, reverse } = props;
+    const { heading, subHeading, intro, introTXTHeading,introTXT, hastag, projectImg, reverse, icon, logoLink, logoLinkTXT } = props;
     const [toggleIntro, setTogglIntro] = useState(false);
     const [toggleDefeat, setToggleDefeat] = useState(false);
    
@@ -16,15 +14,16 @@ const Projects = (props) => {
       
         <div className="col-sm-12 projects container">
             <div className={reverse}>
-                <div className="row  projects-txt">
+                <div className="row col-sm-6 col-xs-12 projects-txt">
                     <h3>{heading}</h3> 
                     <h3>{subHeading}</h3> 
                     <h4>{intro}</h4>
-                    <p id="intro" onClick={toggleFunc}>{introTXTHeading} <i className="fas fa-sort-down"></i></p>
+                    <p id="intro" onClick={toggleFunc}>{introTXTHeading} <i className={icon}></i></p>
                     <p className={(toggleIntro) ? 'show animated flipInX slow-1s' : 'hide'}>{introTXT}</p>
+                    <a className="logoLink" href={logoLink}>{logoLinkTXT}</a>
                     <p className="hastag">{hastag}</p>
                 </div>
-                <div className="row projects-img">
+                <div className="row col-sm-6 col-xs-12 projects-img">
                     <img alt="Project example" src={projectImg}/>
                 </div>
             </div>
@@ -34,4 +33,3 @@ const Projects = (props) => {
 }
 
 export default Projects;
-//<img className="signature" alt="mm-logo-b.svg" src="/./../images/mm-logo-b.svg"/>

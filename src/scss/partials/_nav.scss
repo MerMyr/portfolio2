@@ -4,7 +4,6 @@
     background-color: rgba(255, 255, 255, 0.95);
     border-color: #fff;
     box-shadow: 3px 4px 10px rgba(236, 236, 236, 0.575);
-
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -26,4 +25,55 @@
 .logo-nav{
     width: 25%;
     padding: 5% 2% 2% 2%;
+}
+
+.navbar{
+    width: 100vw;
+}
+
+.navbar-default .navbar-toggle{
+    border: none;
+    &:hover{
+        background-color:rgba(0, 116, 224, 0.5);
+    }
+    .icon-bar{
+        background-color: $blue;
+    }
+}
+.navbar-default .navbar-collapse{
+    border: none;
+}
+
+.in {
+   text-align: right;
+}
+
+.navbar-default .navbar-nav li a{
+    @media (max-width: 767px ){
+        padding-right: 6%;
+    }
+}
+
+.fas{
+    color: $blue;
+    font-size: 1em;
+}
+
+.fa-slash{
+    font-size: 0.75em;
+}
+
+.menu-nav{
+    width: 2.5em;
+}
+
+#mobile-nav{
+    display: none;
+
+    @media (max-width: 767px ){
+        display: block;
+        float: right;
+        padding: 5%;
+        cursor: pointer;
+}
 }

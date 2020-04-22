@@ -29,4 +29,8 @@
   .logo-footer{
       width: 35%;
       float: right;
+
+      @media (max-width: 767px ){
+        width: 100%;
+    }
   }

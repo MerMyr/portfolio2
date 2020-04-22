@@ -1,18 +1,14 @@
-import React, { useState} from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
-    const [ headingFlip, setHeadingFlip] = useState(false);
-    const { headerTXT, subTXT, headerLink, aboutTXT } = props;
+    const { heading, headerTXT, subTXT, headerLink, aboutTXT } = props;
 
     return(
       
         <div className="col-sm-12 header">
             <div className="col-sm-6">
-                <h1 onMouseOut={() => setHeadingFlip(!headingFlip)}>  
-                { headingFlip ? 'Velkommen' : 'Welcome' }
-                </h1> 
-                
+                <h1>{heading}</h1> 
             </div>
             <div className="col-sm-6 header-content">
                 <h4>{headerTXT}</h4>

@@ -1,11 +1,26 @@
 .container-form{
   margin-left: 35%;
   margin-bottom: 10%;
+
+  @media (max-width: 1024px ){
+    margin: 0 0 10% 10%;
+    width: 100%;
+}
+@media (max-width: 767px ){
+    margin-left: 0%;
+}
+@media (max-width: 375px ){
+    margin-top: -15vh;
+}
 }
 
 .form-control{
     box-shadow: 3px 4px 10px rgba(95, 118, 129, 0.5);
     border: solid 2px $blue;
+
+    @media (max-width: 1023px ){
+        width: 100%;
+    }
 }
 
 .btn{

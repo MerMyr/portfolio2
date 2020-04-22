@@ -34,4 +34,3 @@ const CvSection = (props) => {
 }
 
 export default CvSection;
-//<img className="signature" alt="mm-logo-b.svg" src="/./../images/mm-logo-b.svg"/>

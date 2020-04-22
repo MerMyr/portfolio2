@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from './meretheMyrhaugW.png';
+
+import Logo from './graphics/meretheMyrhaugW.png';
 
 const Footer = () => {
    
     return(
       
         <div className="col-sm-12 footer">
-            <div className="col-sm-6 footer-link">
+            <div className="col-sm-6 col-xs-12 footer-link">
                 <NavLink className="" to="/Contact">
                     <p>Contact me</p>
                     <p>e-mail: merethe.myrhaug@gmail.com</p>
@@ -16,7 +17,7 @@ const Footer = () => {
                     <i className="fab fa-linkedin-in"></i>
                 </NavLink>
             </div>
-            <div className="col-sm-6 footer-link">
+            <div className="col-sm-6 col-xs-12 footer-link">
                 <NavLink className="" to="/">
                         <img className="logo-footer" alt="Merethe M logo" src={Logo}/>
                 </NavLink>
