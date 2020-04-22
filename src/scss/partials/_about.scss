@@ -39,7 +39,7 @@
     height: 30vh;
     opacity: 0.85;
     transform: scaleX(-1);
-    margin: 4vh 0 0 -1vw;
+    margin: 1.5vh 0 0 -1.5vw;
 
     p{
         transform: scaleX(-1);
@@ -50,7 +50,7 @@
         padding: 0;   
     }
     @media (max-width: 1200px ){
-            margin-top: 8vh;
+            margin-top: 6vh;
     }
     @media (max-width: 1023px ){
         display: none;

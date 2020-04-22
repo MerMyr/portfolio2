@@ -76,7 +76,7 @@ export default function About() {
                      reverse={'reverse'}
                      heading={'Skills / Other:'}
                      infoTXTHeading={'Additional skills:'} 
-                     infoTXT={`HTML, CSS (SASS), Javascript, office pakken Adobe: XD, Illustrator, Indesign, Photoshop.`} 
+                     infoTXT={`HTML, CSS (SASS), Javascript, React, Vue, office pakken Adobe: XD, Illustrator, Indesign, Photoshop.`} 
                      info2TXTHeading={'Language:'} 
                      info2TXT={`Norwegian Bokmål (mother tongue).
                                 English (proficient in language and writing)`} 

@@ -12,8 +12,7 @@ const Projects = (props) => {
 
     return(
       
-        <div className="col-sm-12 projects container">
-            <div className={reverse}>
+            <div className={`col-sm-12 projects container ${reverse} `}>
                 <div className="row col-sm-6 col-xs-12 projects-txt">
                     <h3>{heading}</h3> 
                     <h3>{subHeading}</h3> 
@@ -26,8 +25,7 @@ const Projects = (props) => {
                 <div className="row col-sm-6 col-xs-12 projects-img">
                     <img alt="Project example" src={projectImg}/>
                 </div>
-            </div>
-        </div>
+            </div>  
     
     )
 }

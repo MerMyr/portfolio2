@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 
 import Header from './../components/header';
 import Projects from './../components/projects';
@@ -13,11 +13,16 @@ import ProjectImg4 from './img/Rosenlund-Barnehage.png';
 export default function Home() {
     const [ headingFlip, setHeadingFlip] = useState(false);
 
-
+    const headingFlipFunc = () => {
+        setTimeout(() => {
+             setHeadingFlip(!headingFlip)
+        }, 1000);
+    }
+  
     return(
       
         <div className="container home-container">
-            <div className="row col-sm-12"  onMouseOut={() => setHeadingFlip(!headingFlip)}> 
+            <div className="row col-sm-12"  onMouseOut={headingFlipFunc}> 
                 <Header 
                     heading={headingFlip ? 'Velkommen' : 'Welcome'}
                     headerTXT={'Hi, my name is Merethe.'}

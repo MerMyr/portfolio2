@@ -5,8 +5,7 @@ const CvSection = (props) => {
 
     return(
       
-        <div className="col-sm-12 cv-container">
-            <div className={reverse}>
+            <div className={`col-sm-12 cv-container ${reverse}`}>
                 <div className="row col-sm-12 cv-txt-container">
                     <div className="cv-txt">
                         <h2>{heading}</h2> 
@@ -28,8 +27,7 @@ const CvSection = (props) => {
                    <hr/>
                 </div>
             </div>
-        </div>
-    
+
     )
 }
 
