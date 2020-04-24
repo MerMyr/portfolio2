@@ -79,7 +79,7 @@ export default function Contact() {
             <div className="row col-sm-12 header">    
                     <h1>Contact me:</h1> 
             </div>
-            <form className="row col-sm-10 container-form" onSubmit={handelSubmit} action="http://merethem.com/client/my-form-processor.php" method="post" name="contact-form">
+            <form className="row col-sm-10 container-form" onSubmit={handelSubmit} action="http://merethem.com/my-form-processor.php" method="post" name="contact-form">
                 <div className="row"> 
                     <div className="col-sm-5">
                         <h4>Enter your firstname</h4>
