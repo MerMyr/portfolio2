@@ -60,14 +60,14 @@ export default function Contact() {
                 break;
         }
     }
-    const handelSubmit = (event) => {
+    /*const handelSubmit = (event) => {
         event.preventDefault();
             localStorage.setItem('firstname', firstname);
             localStorage.setItem('lastname', lastname);
             localStorage.setItem('phone', phone);
             localStorage.setItem('email', email);
             localStorage.setItem('message', message);   
-    }
+    }*/
    
 
     const toggleFunc = () =>{
@@ -79,7 +79,7 @@ export default function Contact() {
             <div className="row col-sm-12 header">    
                     <h1>Contact me:</h1> 
             </div>
-            <form className="row col-sm-10 container-form" onSubmit={handelSubmit} action="http://merethem.com/my-form-processor.php" method="post" name="contact-form">
+            <form className="row col-sm-10 container-form"  action="http://merethem.com/my-form-processor.php" method="post" name="contact-form">
                 <div className="row"> 
                     <div className="col-sm-5">
                         <h4>Enter your firstname</h4>

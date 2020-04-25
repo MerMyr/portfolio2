@@ -1,4 +1,3 @@
-
 <?php
 
 //Accessing the form submission data
