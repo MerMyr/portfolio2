@@ -12,17 +12,29 @@
 
 	$email_subject = "New Form submission";
 
-	$email_body = "You have received a new message from the user $firstname  $lastname.\n".
-                            "Here is the message:\n $message".
+  $email_body = `<html>
+                <body>
+                  <h2> du har fått en melding fra $firstname  $lastname  epost: $visitor_email</h2>
+                  <br>
+                  <p>Meldingen:  $message </p>
+                  <br>
+                  <p>Telefonnr:  $phone </p>
+                  <br>
+                </body>
+   </html>`;
+   /*"You have received a new message from the user $firstname  $lastname.\n".
+                            "Here is the message:\n $message".*/
 
 //Sending the email
   $to = "merethe.myrhaug@gmail.com";
 
   $headers = "From: $email_from  \r\n";
-
   $headers .= "Reply-To: $visitor_email \r\n";
+  $headers .= "MINE-Version: 1.0\r\n";
+  $headers .= "Content-type: text/html; charset-utf-8";
 
-  mail($to,$email_subject,$email_body,$headers);
+
+  mail($to, $email_subject, $email_body, $headers);
 
 //Securing the form against email injection
 function IsInjected($str)

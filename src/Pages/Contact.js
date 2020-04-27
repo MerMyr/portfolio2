@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Logo from './img/meretheMyrhaugW.png';
 
@@ -41,33 +42,33 @@ export default function Contact() {
                 break;
         }
         switch (name) {
-            case 'firstname':
-                setFirstname(value)
-                break;
-            case 'lastname':
-                setLastname(value)
-                  break;
-            case 'phone':
-                setPhone(value)
-                    break;
-            case 'email':
-                setEmail(value)
-                 break;
-            case 'message':
-                setMessage(value)                 
-                    break;
-            default:
-                break;
-        }
+                    case 'firstname':
+                        setFirstname(value)
+                        break;
+                    case 'lastname':
+                        setLastname(value)
+                        break;
+                    case 'phone':
+                        setPhone(value)
+                            break;
+                    case 'email':
+                        setEmail(value)
+                        break;
+                case 'message':
+                        setMessage(value)                 
+                            break;
+                    default:
+                        break;
+                }
     }
-    /*const handelSubmit = (event) => {
+    const handelSubmit = (event) => {
         event.preventDefault();
             localStorage.setItem('firstname', firstname);
             localStorage.setItem('lastname', lastname);
             localStorage.setItem('phone', phone);
             localStorage.setItem('email', email);
-            localStorage.setItem('message', message);   
-    }*/
+            localStorage.setItem('message', message);
+    }
    
 
     const toggleFunc = () =>{
@@ -79,7 +80,7 @@ export default function Contact() {
             <div className="row col-sm-12 header">    
                     <h1>Contact me:</h1> 
             </div>
-            <form className="row col-sm-10 container-form"  action="http://merethem.com/my-form-processor.php" method="post" name="contact-form">
+            <form className="row col-sm-10 container-form"  action="http://merethem.com/my-form-processor.php" method="post" name="contact-form" onSubmit={handelSubmit}>
                 <div className="row"> 
                     <div className="col-sm-5">
                         <h4>Enter your firstname</h4>
@@ -133,7 +134,10 @@ export default function Contact() {
             <div className={(toggle) ?  'col-sm-12' && 'popup_container' : 'hide'}>
                 <div className="col-sm-8 popup_content">
                     <i onClick={toggleFunc} className="fas fa-times"></i>
-                    <h3>Thank you for your message. <br/> <br/> I will get back to you, as soon as possible!</h3>
+                    <h3>Thank you for your message. <br/> <br/> 
+                        I will get back to you, as soon as possible!<br/> <br/> 
+                         <NavLink className="back" to="/">Back to home</NavLink>
+                    </h3>
                     <img className="logo-thank" alt="Merethe M logo" src={Logo}/>
                 </div>
             </div>

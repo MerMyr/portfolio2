@@ -48,12 +48,3 @@ const Nav = (props) => {
 }
 
 export default Nav;
-
-/**  
- *            <i onClick={toggleNavFunc} className={(!toggleNav) ? 'fas fa-bars show' : 'fas fa-bars hide'}></i>
-            <i onClick={toggleNavFunc} className={(!toggleNav) ? 'fas fa-slash hide' : 'fas fa-slash show'} id="bs-example-navbar-collapse-1"></i>
-
- * <span onClick={toggleNavFunc}  className="sr-only">Toggle navigation</span>
-            <span onClick={toggleNavFunc}  className="icon-bar"></span>
-            <span onClick={toggleNavFunc}  className="icon-bar"></span>
-            <span onClick={toggleNavFunc}  className="icon-bar"></span> */
