@@ -1,5 +1,7 @@
 <?php
+ header("Location: http://merethem.com/#contact-page");
 
+ exit();
 //Accessing the form submission data
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
@@ -12,18 +14,17 @@
 
 	$email_subject = "New Form submission";
 
-  $email_body = `<html>
-                <body>
-                  <h2> du har fått en melding fra $firstname  $lastname  epost: $visitor_email</h2>
-                  <br>
-                  <p>Meldingen:  $message </p>
-                  <br>
-                  <p>Telefonnr:  $phone </p>
-                  <br>
-                </body>
-   </html>`;
-   /*"You have received a new message from the user $firstname  $lastname.\n".
-                            "Here is the message:\n $message".*/
+  $email_body = "<html>
+                    <body>
+                      <h2> Du har fått en melding fra $firstname  $lastname.</h2>
+                      <br>
+                      <p>Meldingen:  $message </p>
+                      <br>
+                      <p>Telefonnr:  $phone </p>
+                      <p>Email  $visitor_email </p>
+                      <br>
+                  </body>
+                 </html>";
 
 //Sending the email
   $to = "merethe.myrhaug@gmail.com";
@@ -34,7 +35,7 @@
   $headers .= "Content-type: text/html; charset-utf-8";
 
 
-  mail($to, $email_subject, $email_body, $headers);
+  $send = mail($to, $email_subject, $email_body, $headers);
 
 //Securing the form against email injection
 function IsInjected($str)

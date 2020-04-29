@@ -27,9 +27,7 @@ const Nav = (props) => {
             <img className={(toggleNav) ? 'menu-nav hide' : 'menu-nav show'} id="menu-nav" alt="Menu navigation" src={Menu}/> 
             <img className={(!toggleNav) ? 'menu-nav hide' : 'menu-nav show'} id="close-nav" alt="Menu navigation" src={Close} /> 
           </div>
-          <button type="button" className="navbar-toggle collapsed" id="mobile-nav" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-         
-          </button>
+          <button type="button" className="navbar-toggle collapsed" id="mobile-nav" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
           <NavLink className="navbar-brand" to="/">
             <img className="logo-nav" alt="Merethe M logo" src={Logo}/> 
           </NavLink>

@@ -24,63 +24,35 @@ export default function Contact() {
 
         switch (name) {
             case 'firstname':
-                (value !== '') ? setFirstnameError(false) : setFirstnameError(true)
+                (value !== '') ? setFirstnameError(false) : setFirstnameError(true);  setFirstname(value)
                 break;
             case 'lastname':
-                (value !== '') ? setLastnameError(false) : setLastnameError(true) 
+                (value !== '') ? setLastnameError(false) : setLastnameError(true); setLastname(value)
                 break;
             case 'phone':
-                (phonePattern.test(value)) ? setPhoneError(false) : setPhoneError(true) 
+                (phonePattern.test(value)) ? setPhoneError(false) : setPhoneError(true); setPhone(value)
                 break;
             case 'email':
-                (emailPattern.test(value)) ? setEmailError(false) : setEmailError(true) 
+                (emailPattern.test(value)) ? setEmailError(false) : setEmailError(true); setEmail(value)
                 break;
             case 'message':
-                (value !== '') ? setMessageError(false) : setMessageError(true) 
+                (value !== '') ? setMessageError(false) : setMessageError(true); setMessage(value)
                  break;
             default:
                 break;
         }
-        switch (name) {
-                    case 'firstname':
-                        setFirstname(value)
-                        break;
-                    case 'lastname':
-                        setLastname(value)
-                        break;
-                    case 'phone':
-                        setPhone(value)
-                            break;
-                    case 'email':
-                        setEmail(value)
-                        break;
-                case 'message':
-                        setMessage(value)                 
-                            break;
-                    default:
-                        break;
-                }
     }
-    const handelSubmit = (event) => {
-        event.preventDefault();
-            localStorage.setItem('firstname', firstname);
-            localStorage.setItem('lastname', lastname);
-            localStorage.setItem('phone', phone);
-            localStorage.setItem('email', email);
-            localStorage.setItem('message', message);
-    }
-   
-
+    
     const toggleFunc = () =>{
         setToggle(!toggle)
     }
 
     return(
-        <div className="container">
+        <div className="container" id="contact-page">
             <div className="row col-sm-12 header">    
                     <h1>Contact me:</h1> 
             </div>
-            <form className="row col-sm-10 container-form"  action="http://merethem.com/my-form-processor.php" method="post" name="contact-form" onSubmit={handelSubmit}>
+            <form className="row col-sm-10 container-form"  action="http://merethem.com/my-form-processor.php" method="post" name="contact-form">
                 <div className="row"> 
                     <div className="col-sm-5">
                         <h4>Enter your firstname</h4>
