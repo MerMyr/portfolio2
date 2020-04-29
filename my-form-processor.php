@@ -35,7 +35,7 @@
   $headers .= "Content-type: text/html; charset-utf-8";
 
 
-  $send = mail($to, $email_subject, $email_body, $headers);
+mail($to, $email_subject, $email_body, $headers);
 
 //Securing the form against email injection
 function IsInjected($str)
